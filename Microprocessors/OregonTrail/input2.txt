@@ -1,0 +1,10 @@
+MapSize:3
+ViewPort:13
+Food:123
+
+Map
+OOOOO
+OZEGO
+OEHBO
+OHHXO
+OOOOO
