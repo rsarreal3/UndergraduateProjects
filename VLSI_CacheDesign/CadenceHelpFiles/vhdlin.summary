@@ -1,0 +1,109 @@
+INFO (VHDLIN-284): VHDL In Run Summary
+@(#)$CDS: vhdlin version 6.1.7-64b 09/27/2016 19:46 (sjfhw304) $  Sun Dec 10 11:44:34 2017
+
+INFO (VHDLIN-238): Processing VHDL source file: /afs/umbc.edu/users/s/a/saressa1/home/CMPE315/project//mux2_1b.vhd.
+INFO (VHDLIN-264): Done.
+INFO (VHDLIN-238): Processing VHDL source file: /afs/umbc.edu/users/s/a/saressa1/home/CMPE315/project//mux4_1b.vhd.
+INFO (VHDLIN-264): Done.
+INFO (VHDLIN-238): Processing VHDL source file: /afs/umbc.edu/users/s/a/saressa1/home/CMPE315/project//mux4_8b.vhd.
+INFO (VHDLIN-264): Done.
+INFO (VHDLIN-244): Vhdl Design Unit: mux4_1b : Entity
+INFO (VHDLIN-575): Symbol 'mux4_1b' was not imported because it already exists in library 'cmpe315'.
+To overwrite the symbol, select an appropriate option from the Overwrite Symbol
+Views drop-down list and try again.
+INFO (VHDLIN-245): Created entity view of type Vhdl
+INFO (VHDLIN-244): Vhdl Design Unit: mux2_1b : Entity
+INFO (VHDLIN-575): Symbol 'mux2_1b' was not imported because it already exists in library 'cmpe315'.
+To overwrite the symbol, select an appropriate option from the Overwrite Symbol
+Views drop-down list and try again.
+INFO (VHDLIN-245): Created entity view of type Vhdl
+INFO (VHDLIN-244): Vhdl Design Unit: mux4_8b : Entity
+INFO (VHDLIN-575): Symbol 'mux4_8b' was not imported because it already exists in library 'cmpe315'.
+To overwrite the symbol, select an appropriate option from the Overwrite Symbol
+Views drop-down list and try again.
+INFO (VHDLIN-245): Created entity view of type Vhdl
+INFO (VHDLIN-251): Vhdl Design Unit: mux4_8b.structural : Architecture
+Error: Net "input2<7>" shorted to net "input1<7>".
+Error: Net "input2<6>" shorted to net "input1<6>".
+Error: Net "input2<5>" shorted to net "input1<5>".
+Error: Net "input2<4>" shorted to net "input1<4>".
+Error: Net "input2<3>" shorted to net "input1<3>".
+Error: Net "input2<2>" shorted to net "input1<2>".
+Error: Net "input2<1>" shorted to net "input1<1>".
+Error: Net "input2<0>" shorted to net "input1<0>".
+Error: Net "input3<7>" shorted to net "input2<7>".
+Error: Net "input3<6>" shorted to net "input2<6>".
+Error: Net "input3<5>" shorted to net "input2<5>".
+Error: Net "input3<4>" shorted to net "input2<4>".
+Error: Net "input3<3>" shorted to net "input2<3>".
+Error: Net "input3<2>" shorted to net "input2<2>".
+Error: Net "input3<1>" shorted to net "input2<1>".
+Error: Net "input3<0>" shorted to net "input2<0>".
+Error: Net "input4<7>" shorted to net "input3<7>".
+Error: Net "input4<6>" shorted to net "input3<6>".
+Error: Net "input4<5>" shorted to net "input3<5>".
+Error: Net "input4<4>" shorted to net "input3<4>".
+Error: Net "input4<3>" shorted to net "input3<3>".
+Error: Net "input4<2>" shorted to net "input3<2>".
+Error: Net "input4<1>" shorted to net "input3<1>".
+Error: Net "input4<0>" shorted to net "input3<0>".
+Error: Net "sel<1:0>" shorted to net "input4<7>".
+Error: Net "sel<1:0>" shorted to net "input4<6>".
+Error: Net "sel<1:0>" shorted to net "input4<5>".
+Error: Net "sel<1:0>" shorted to net "input4<4>".
+Error: Net "sel<1:0>" shorted to net "input4<3>".
+Error: Net "sel<1:0>" shorted to net "input4<2>".
+Error: Net "sel<1:0>" shorted to net "input4<1>".
+Error: Net "sel<1:0>" shorted to net "input4<0>".
+Error: Net "output<7>" shorted to net "sel<1:0>".
+Error: Net "output<6>" shorted to net "output<7>".
+Error: Net "output<5>" shorted to net "output<6>".
+Error: Net "output<4>" shorted to net "output<5>".
+Error: Net "output<3>" shorted to net "output<4>".
+Error: Net "output<2>" shorted to net "output<3>".
+Error: Net "output<1>" shorted to net "output<2>".
+Error: Net "output<0>" shorted to net "output<1>".
+Error: (DB-270004): Illegal bus reference - Can't tap "<output<0>>" from net "input1<7:0>".
+Error: (DB-270004): Illegal bus reference - Can't tap "<output<0>>" from net "input1<7:0>".
+Error: (DB-270004): Illegal bus reference - Can't tap "<output<0>>" from net "input1<7:0>".
+Error: (DB-270004): Illegal bus reference - Can't tap "<output<0>>" from net "input1<7:0>".
+Error: (DB-270004): Illegal bus reference - Can't tap "<output<0>>" from net "input1<7:0>".
+Error: (DB-270004): Illegal bus reference - Can't tap "<output<0>>" from net "input1<7:0>".
+Error: (DB-270004): Illegal bus reference - Can't tap "<output<0>>" from net "input1<7:0>".
+Error: (DB-270004): Illegal bus reference - Can't tap "<output<0>>" from net "input1<7:0>".
+Error: (DB-270004): Illegal bus reference - Can't tap "<output<0>>" from net "sel<1:0>".
+WARNING (VHDLIN-31): Composer-Schematic connectivity extraction failed for the library, cmpe315, cell,
+mux4_8b, view structural. There were 49 error(s) and 0 warning(s) found. Correct the hdl
+description of this module to correct the errors/warnings listed in log file.
+INFO (VHDLIN-383): Generated sheet 1 for schematic mux4_8b.
+INFO (VHDLIN-246): Created structural view of type Schematic.
+INFO (VHDLIN-251): Vhdl Design Unit: mux4_1b.structural : Architecture
+Error: Net "out_of_1_2" shorted to net "out_of_3_4".
+Error: Net "sel<0>" shorted to net "out_of_1_2".
+Error: Net "sel<1>" shorted to net "sel<0>".
+Error: Net "sel<0>" shorted to net "sel<1>".
+Error: Net "input4" shorted to net "sel<0>".
+Error: Net "input2" shorted to net "input4".
+Error: (SCH-3488): 'input2' & 'input4' thru nets 'NeTt_5' & 'input2'
+Error: (DB-270004): Illegal bus reference - Can't tap "<input2>" from net "input3".
+Error: (DB-270004): Illegal bus reference - Can't tap "<input2>" from net "input1".
+Error: (DB-270004): Illegal bus reference - Can't tap "<input2>" from net "output".
+WARNING (VHDLIN-31): Composer-Schematic connectivity extraction failed for the library, cmpe315, cell,
+mux4_1b, view structural. There were 10 error(s) and 0 warning(s) found. Correct the hdl
+description of this module to correct the errors/warnings listed in log file.
+INFO (VHDLIN-383): Generated sheet 1 for schematic mux4_1b.
+INFO (VHDLIN-246): Created structural view of type Schematic.
+INFO (VHDLIN-251): Vhdl Design Unit: mux2_1b.structural : Architecture
+INFO (VHDLIN-262): Bound symbol inverter at library cmpe315 for component inverter.
+INFO (VHDLIN-262): Bound symbol and2 at library cmpe315 for component and2.
+INFO (VHDLIN-262): Bound symbol or2 at library cmpe315 for component or2.
+INFO (VHDLIN-383): Generated sheet 1 for schematic mux2_1b.
+INFO (VHDLIN-246): Created structural view of type Schematic.
+
+
+****************************************************************
+
+INFO (VHDLIN-229): Number of file(s) processed in this round are 3
+****************************************************************
+INFO (VHDLIN-231): Number of file(s) successfully imported in this round are 3
+****************************************************************

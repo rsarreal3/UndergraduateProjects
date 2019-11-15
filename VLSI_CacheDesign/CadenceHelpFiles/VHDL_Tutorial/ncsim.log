@@ -1,0 +1,14 @@
+ncsim: 15.20-s035: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	ncsim	15.20-s035: Started on Sep 15, 2017 at 22:11:26 EDT
+ncsim
+    -input inverter_ncsim.run
+    -messages
+    -cdslib /afs/umbc.edu/users/s/a/saressa1/home/CMPE315/cds.lib
+    -hdlvar /afs/umbc.edu/users/s/a/saressa1/home/CMPE315/hdl.var
+    inverter_test
+
+Loading snapshot vhdl.inverter_test:test .................... Done
+ncsim> run 90 ns
+Ran until 90 NS + 0
+ncsim> exit
+TOOL:	ncsim	15.20-s035: Exiting on Sep 15, 2017 at 22:11:27 EDT  (total: 00:00:01)

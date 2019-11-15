@@ -1,0 +1,17 @@
+ncvhdl: 15.20-s035: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	ncvhdl	15.20-s035: Started on Sep 15, 2017 at 22:03:48 EDT
+ncvhdl
+    -messages
+    -linedebug
+    -cdslib cds.lib
+    -hdlvar hdl.var
+    -smartorder
+    VHDL_Tutorial/inverter_test.vhdl
+
+VHDL_Tutorial/inverter_test.vhdl:
+	errors: 0, warnings: 0
+VHDL.INVERTER_TEST (entity):
+	streams: 1, words: 38
+VHDL.INVERTER_TEST:TEST (architecture):
+	streams: 2, words: 1079
+TOOL:	ncvhdl	15.20-s035: Exiting on Sep 15, 2017 at 22:03:48 EDT  (total: 00:00:00)

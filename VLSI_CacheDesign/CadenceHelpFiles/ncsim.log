@@ -1,0 +1,21 @@
+ncsim: 15.20-s035: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	ncsim	15.20-s035: Started on Sep 15, 2017 at 22:10:02 EDT
+ncsim
+    -input VHDL_Tutorial/inverter_ncsim.run
+    -messages
+    -cdslib cds.lib
+    -hdlvar hdl.var
+    inverter_test
+
+Loading snapshot vhdl.inverter_test:test .................... Done
+ncsim> run 90 ns
+ncsim: *E,TRFILEIO: file I/O error.
+cannot open 'inverter_in.txt' for reading (No such file or directory)
+
+          File: ./VHDL_Tutorial/inverter_test.vhdl, line = 49, pos = 19
+         Scope: :io_process
+          Time: 0 FS + 0
+
+./VHDL_Tutorial/inverter_test.vhdl:49   while not (endfile(infile)) loop
+ncsim> exit
+TOOL:	ncsim	15.20-s035: Exiting on Sep 15, 2017 at 22:10:03 EDT  (total: 00:00:01)

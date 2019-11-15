@@ -1,0 +1,20 @@
+ncelab: 15.20-s035: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	ncelab	15.20-s035: Started on Sep 15, 2017 at 22:04:46 EDT
+ncelab
+    -messages
+    -access rwc
+    -v93
+    -cdslib cds.lib
+    -hdlvar hdl.var
+    inverter_test
+
+ncelab: *W,ARCMRA: Elaborating the VHDL.INVERTER_TEST:TEST, MRA (most recently analyzed) architecture.
+	Elaborating the design hierarchy:
+	Building instance specific data structures.
+	Design hierarchy summary:
+		     Instances  Unique
+		Components:  3       2
+		Processes:   3       3
+		Signals:     3       3
+	Writing initial simulation snapshot: VHDL.INVERTER_TEST:TEST
+TOOL:	ncelab	15.20-s035: Exiting on Sep 15, 2017 at 22:04:47 EDT  (total: 00:00:01)
