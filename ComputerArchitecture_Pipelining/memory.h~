@@ -1,0 +1,24 @@
+#ifndef MEMORY_H
+#define MEMORY_H
+
+#include"data_struct.h"
+
+typedef struct DA_Cache {
+  int block_data[4];
+  int valid;
+  int tag;
+}DA_CACHE_T;
+
+typedef struct TWSA_Cache {
+  DA_CACHE_T* set[2]; // two sets 
+  int lru;
+}TWSA_CACHE_T;
+
+
+int InitDataMemory(long data_array[], char* filename);
+int RegStrToInt(char* reg_str);
+  
+
+
+#endif
+
