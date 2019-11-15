@@ -1,0 +1,115 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : top.vf
+// /___/   /\     Timestamp : 04/25/2017 21:48:43
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog "C:/Users/Ressa/Documents/CMPE415/Xilinx Projects/HW6_pong/top.vf" -w "C:/Users/Ressa/Documents/CMPE415/Xilinx Projects/HW6_pong/top.sch"
+//Design Name: top
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module top(CLK_50MHZ, 
+           RESET, 
+           ROT_A, 
+           ROT_B, 
+           VGA_BLUE, 
+           VGA_GREEN, 
+           VGA_HSYNC, 
+           VGA_RED, 
+           VGA_VSYNC);
+
+    input CLK_50MHZ;
+    input RESET;
+    input ROT_A;
+    input ROT_B;
+   output VGA_BLUE;
+   output VGA_GREEN;
+   output VGA_HSYNC;
+   output VGA_RED;
+   output VGA_VSYNC;
+   
+   wire XLXN_63;
+   wire XLXN_64;
+   wire [9:0] XLXN_71;
+   wire [9:0] XLXN_72;
+   wire XLXN_75;
+   wire XLXN_78;
+   wire [9:0] XLXN_80;
+   wire [9:0] XLXN_81;
+   wire XLXN_85;
+   wire [9:0] XLXN_86;
+   wire XLXN_114;
+   wire XLXN_115;
+   wire [9:0] XLXN_119;
+   wire XLXN_133;
+   
+   p1_paddle  XLXI_15 (.clk(CLK_50MHZ), 
+                      .down(XLXN_114), 
+                      .gameover_in(XLXN_133), 
+                      .rst(RESET), 
+                      .up(XLXN_115), 
+                      .p1_y_pos(XLXN_81[9:0]));
+   cpu_paddle  XLXI_16 (.ball_y_pos(XLXN_119[9:0]), 
+                       .clk(XLXN_63), 
+                       .rst(RESET), 
+                       .cpu_y_pos(XLXN_80[9:0]));
+   cpu_delay  XLXI_17 (.clk(CLK_50MHZ), 
+                      .p(XLXN_63));
+   ball_delay  XLXI_18 (.clk(CLK_50MHZ), 
+                       .collision(XLXN_75), 
+                       .rst(RESET), 
+                       .p(XLXN_64));
+   collision_detector  XLXI_19 (.ball_posx(XLXN_86[9:0]), 
+                               .ball_posy(XLXN_119[9:0]), 
+                               .ball_x_vel(XLXN_85), 
+                               .clk(CLK_50MHZ), 
+                               .cpu_posy(XLXN_80[9:0]), 
+                               .p1_posy(XLXN_81[9:0]), 
+                               .collision(XLXN_75));
+   vga_sync  XLXI_20 (.clk(CLK_50MHZ), 
+                     .blank(XLXN_78), 
+                     .hcount(XLXN_71[9:0]), 
+                     .hsync(VGA_HSYNC), 
+                     .pix_clk(), 
+                     .vcount(XLXN_72[9:0]), 
+                     .vsync(VGA_VSYNC));
+   display  XLXI_21 (.ball_posx(XLXN_86[9:0]), 
+                    .ball_posy(XLXN_119[9:0]), 
+                    .blank(XLXN_78), 
+                    .clk(CLK_50MHZ), 
+                    .collision(CLK_50MHZ), 
+                    .cpu_posy(XLXN_80[9:0]), 
+                    .game_over(XLXN_133), 
+                    .pos_h(XLXN_71[9:0]), 
+                    .pos_v(XLXN_72[9:0]), 
+                    .p1_posy(XLXN_81[9:0]), 
+                    .rst(RESET), 
+                    .blue(VGA_BLUE), 
+                    .green(VGA_GREEN), 
+                    .red(VGA_RED));
+   ball  XLXI_23 (.clk(XLXN_64), 
+                 .collision(XLXN_75), 
+                 .rst(RESET), 
+                 .game_over(XLXN_133), 
+                 .x_pos(XLXN_86[9:0]), 
+                 .x_vel(XLXN_85), 
+                 .y_pos(XLXN_119[9:0]));
+   rotator_oneshot  XLXI_24 (.clk(CLK_50MHZ), 
+                            .rot_a(ROT_A), 
+                            .rot_b(ROT_B), 
+                            .rst(RESET), 
+                            .rot_l_oneshot(XLXN_115), 
+                            .rot_r_oneshot(XLXN_114));
+endmodule
